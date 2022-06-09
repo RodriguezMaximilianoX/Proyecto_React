@@ -1,17 +1,21 @@
-import { Typography } from '@mui/material'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import ItemList from './ItemList'
 
-function ItemListContainer({greeting}) {
+function ItemListContainer() {
+
+  const [personajes, setPersonajes] = useState([])
+
+  useEffect(() => {
+    fetch("https://rickandmortyapi.com/api/character")
+      .then(res => res.json())
+      .then(res => setPersonajes(res.results))
+      .catch(error => console.error("Error", error))
+
+  }, [])
+  console.log(personajes)
+
   return (
-    <Typography
-        variant="h2"
-        sx={{
-            fontFamily: 'roboto',
-            fontWeight: 500,
-            fontSize: 70,
-        }}
-    >{greeting}
-    </Typography>
+    <ItemList personajes={personajes} /> 
   )
 }
 
