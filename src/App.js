@@ -1,25 +1,23 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
-import ItemCount from './components/ItemCount';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import ItemDetailContainer from './components/ItemDetailContainer';
 
 function App() {
 
-  const onAdd = (count) =>{
-    alert(`sumaste ${count} productos al carrito`);
-  }
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <NavBar />
-        <ItemListContainer />
-        <ItemCount initial={1} max={10} onAdd={onAdd} />
-        <p>
-          Todo para convertirte en gamer
-        </p>
-      </header>
-    </div>
+  return (<>
+    <BrowserRouter>
+    <NavBar />
+      <Routes>
+        <Route path='/' element={<ItemListContainer />} />
+        <Route path='/categoria/:category' element={<ItemListContainer />} />
+        <Route path='/item/:id' element={<ItemDetailContainer />} />
+      </Routes>
+    Footer
+    </BrowserRouter>
+  </>
   );
 }
 

@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Mouse 1",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, deserunt, dolor nobis exercitationem nihil minima. ",
+        "price": 550,
+        "pictureUrl": "logo192.png",
+        "category": "mouse"
+    },
+    {
+        "id": 2,
+        "title": "Mouse 2",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, deserunt, dolor nobis exercitationem nihil minima. ",
+        "price": 450,
+        "pictureUrl": "logo192.png",
+        "category": "mouse"
+    },
+    {
+        "id": 3,
+        "title": "Teclado 1",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, deserunt, dolor nobis exercitationem nihil minima. ",
+        "price": 350,
+        "pictureUrl": "logo192.png",
+        "category": "teclados"
+    },
+    {
+        "id": 4,
+        "title": "Teclado 2",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, deserunt, dolor nobis exercitationem nihil minima. ",
+        "price": 800,
+        "pictureUrl": "logo192.png",
+        "category": "teclados"
+    },
+    {
+        "id": 5,
+        "title": "Joystick 1",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, deserunt, dolor nobis exercitationem nihil minima. ",
+        "price": 650,
+        "pictureUrl": "logo192.png",
+        "category": "Joystick"
+    },
+    {
+        "id": 6,
+        "title": "Joystick 2",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, deserunt, dolor nobis exercitationem nihil minima. ",
+        "price": 275,
+        "pictureUrl": "logo192.png",
+        "category": "joystick"
+    }
+]

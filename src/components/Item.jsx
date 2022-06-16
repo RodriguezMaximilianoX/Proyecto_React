@@ -5,9 +5,9 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-export default function Item({personaje}) {
+export default function Item({producto}) {
 
-    const {name, image, species, status} = personaje
+    const {title, pictureUrl, price, description} = producto
 
   return (
     <Card sx={{ maxWidth: 345 }}>
@@ -15,16 +15,16 @@ export default function Item({personaje}) {
         <CardMedia
           component="img"
           height="250"
-          image={image}
-          alt={name}
+          image={pictureUrl}
+          alt={title}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {name}
+            {title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Especie: {species}
-            Estado: {status}
+            Precio: {price}
+            Descripción: {description}
           </Typography>
         </CardContent>
       </CardActionArea>

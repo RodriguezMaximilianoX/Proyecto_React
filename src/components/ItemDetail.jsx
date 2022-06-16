@@ -9,4 +9,4 @@ const ItemDetail = ({personajes}) => {
   )
 }
 
-export default ItemDetail
+export default ItemDetail 

@@ -1,21 +1,20 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import ItemList from './ItemList'
 
 function ItemListContainer() {
+  const [productos, setProductos] = useState ([]);
 
-  const [personajes, setPersonajes] = useState([])
-
-  useEffect(() => {
-    fetch("https://rickandmortyapi.com/api/character")
-      .then(res => res.json())
-      .then(res => setPersonajes(res.results))
+  useEffect (() => {
+    fetch("./productos.json")
+      .then((res) => res.json())
+      .then(res => setProductos(res.results))
       .catch(error => console.error("Error", error))
 
   }, [])
-  console.log(personajes)
+  console.log(productos)
 
   return (
-    <ItemList personajes={personajes} /> 
+    <ItemList productos={productos} /> 
   )
 }
 
