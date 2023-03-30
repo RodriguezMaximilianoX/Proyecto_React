@@ -13,20 +13,20 @@ import { Task } from '../../models/task.class';
     }, [task]);
 
     return (
-        <div>
-            <h2>
-                Nombre: {task.name}
-            </h2>
-            <h3>
-                Descripción: {task.description}
-            </h3>
-            <h4>
-                Nivel: {task.levels}
-            </h4>
-            <h5>
-                Estado de taréa: {task.completed ? 'Completada' : 'Pendiente'}
-            </h5>
-        </div>
+        <tr className='fw-normal'>
+            <th>
+                <span className='ms-s'>{task.name}</span>
+            </th>
+            <td className='align-midle'>
+                <span className='ms-s'>{task.description}</span>
+            </td>
+            <td className='align-midle'>
+                <span>{task.level}</span>
+            </td>
+            <td className='align-midle'>
+                <span>{task.completed}</span>
+            </td>
+        </tr>
     );
  };
  
